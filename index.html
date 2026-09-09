@@ -7,15 +7,15 @@
 <meta name="description" content="Turn any YouTube video into a clean, readable transcript and a structured summary — right inside Claude. Free, open source, installs in under a minute.">
 <style>
   :root {
-    --deep-blue: #0b3f6a;
-    --cyan: #02a5d2;
-    --light-blue: #2674b5;
-    --pale-blue: #e5f2f9;
-    --soft-yellow: #FEF5C4;
-    --ink: #14202b;
+    --deep-blue: #0f0f0f;
+    --cyan: #ff0000;
+    --light-blue: #cc0000;
+    --pale-blue: #fff1f1;
+    --soft-yellow: #f0f0f0;
+    --ink: #0f0f0f;
     --paper: #ffffff;
-    --muted: #5b7285;
-    --border: #d7e6ef;
+    --muted: #606060;
+    --border: #e5e5e5;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -68,17 +68,17 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: var(--deep-blue);
+    background: var(--cyan);
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     font-size: 17px;
     padding: 16px 28px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(11,63,106,0.22);
+    box-shadow: 0 8px 20px rgba(255,0,0,0.24);
     transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   }
-  .btn:hover { background: var(--light-blue); transform: translateY(-1px); box-shadow: 0 10px 24px rgba(11,63,106,0.28); }
+  .btn:hover { background: var(--light-blue); transform: translateY(-1px); box-shadow: 0 10px 24px rgba(204,0,0,0.3); }
   .btn svg { flex-shrink: 0; }
   .btn-row { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
   .fineprint { font-size: 14px; color: var(--muted); }
@@ -150,7 +150,7 @@
   }
   pre {
     background: var(--ink);
-    color: #e9f3f9;
+    color: #f1f1f1;
     padding: 14px 16px;
     border-radius: 10px;
     overflow-x: auto;
@@ -168,10 +168,10 @@
     border-radius: 12px;
     padding: 16px 18px;
     font-size: 14.5px;
-    color: #5c4d12;
+    color: #3d3d3d;
     margin-top: 28px;
   }
-  .callout strong { color: #423608; }
+  .callout strong { color: #0f0f0f; }
 
   .usage-examples { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
   .usage-examples pre { margin: 0; }
